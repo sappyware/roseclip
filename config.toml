@@ -1,0 +1,76 @@
+theme = "catppuccin-mocha"
+
+[window]
+width        = 560
+radius       = 12
+padding      = 20
+gap          = 16
+border_width = 1
+opacity      = 0.97
+dim          = 0.0
+offset_y     = 0
+monitor      = ""
+
+[search]
+height       = 40
+radius       = 10
+border_width = 2
+padding_x    = 12
+placeholder  = "Search..."
+icon         = "\uf002"
+icon_size    = 16
+
+[list]
+visible_rows  = 6.5
+row_height    = 36
+row_gap       = 2
+row_radius    = 10
+padding_x     = 8
+icon_size     = 26
+icon_gap      = 12
+thumb_width   = 44          # image preview width (height = row_height - 8)
+text_icon     = "\uf15c"
+image_icon    = "\uf1c5"
+show_icons    = true
+shrink_to_fit = true
+scrollbar     = true
+scrollbar_gap = 8
+empty_text    = "No results"
+
+[font]
+family          = ""        # empty = system default; use a Nerd Font for the icons
+size            = 15
+weight          = "normal"
+selected_weight = "normal"
+italic          = false
+letter_spacing  = 0
+
+[behavior]
+mode            = "daemon"  # "daemon" (keep running, bind toggle) | "oneshot" (run `qs -c roseclip` per use)
+watch_clipboard = true      # daemon mode: start the wl-paste/cliphist watchers (oneshot: run them yourself)
+max_results     = 200
+preview_chars   = 200       # text length cliphist keeps per entry (search runs on this)
+auto_paste      = true
+paste_delay_ms  = 120
+paste_command   = "wtype -M ctrl v -m ctrl"   # terminals: "wtype -M ctrl -M shift v -m shift -m ctrl"
+close_on_click_outside = true
+wrap            = true
+hover_select    = true
+
+[animation]
+enabled     = true
+duration_ms = 120
+resize_ms   = 180
+
+[colors]                    # override single theme colors; "" = use theme
+bg = ""
+surface = ""
+border = ""
+fg = ""
+muted = ""
+accent = ""
+selected_from = ""
+selected_to = ""
+selected_fg = ""
+hover = ""
+urgent = ""
