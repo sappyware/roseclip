@@ -192,5 +192,3 @@ roseclip exposes its surface on the roseclip target:
 ---
 
 ## help me fix any bugs with PRs!
-
-Source for roseclip. Screenshot file is roseclip.png.
